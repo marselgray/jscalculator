@@ -1,0 +1,109 @@
+*, 
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	text-decoration: none;
+}
+
+*:focus{
+	outline: none;
+}
+
+html{
+	font-size: 62.5%;
+}
+body{
+	background-color: black;
+	position: relative;
+    height: 100vh;
+}
+
+#container{
+	width: 100rem;
+	height: 55rem;
+	background-image:
+	linear-gradient(
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0.3)),
+		url('https://images.unsplash.com/photo-1514575619841-1a3d949d3277?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80');
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+}
+
+#calculator{
+	width: 32rem;
+	height: 100%;
+	background-color: #eaedef;
+	margin: 0 auto;
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+#result{
+	height: 12rem;
+}
+
+#history{
+	text-align: right;
+	height: 2rem;
+	margin: 0 2rem;
+	padding-top: 2rem;
+	font-size: 1.5rem;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 6rem;
+	margin: 1rem 2rem;
+	font-size: 3rem;
+}
+#keyboard{
+	height: 40rem;
+}
+.operator, .number, .empty{
+	width: 5rem;
+	height: 5rem;
+	margin: 1.5rem;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.number, .empty{
+	background-color: #eaedef;
+}
+.number, .operator{
+	cursor: pointer;
+}
+.operator:active, .number:active{
+	font-size: 1.3rem;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+button:nth-child(4){
+	font-size: 2rem;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 2rem;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 2rem;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 2rem;
+	background-color: #7d93e0;
+}
+button:nth-child(20){
+	font-size: 2rem;
+	background-color: #9477af;
+}
