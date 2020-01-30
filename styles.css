@@ -27,7 +27,7 @@ body{
 	linear-gradient(
 		rgba(0, 0, 0, 0.3),
 		rgba(0, 0, 0, 0.3)),
-		url('https://images.unsplash.com/photo-1514575619841-1a3d949d3277?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80');
+		url('art.jpeg');
 		position: absolute;
 		left: 50%;
 		top: 50%;
